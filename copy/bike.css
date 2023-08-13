@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+.site-title a {
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+.site-title a{
+    /* display: inline; */
+    display: block;
+}
+.section-title {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: solid 1px #383e45;
+}
+.content-title{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+/*header*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}/*ヘッダー広がった*/
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}/*aboutとBIKEが横並びになった*/
+#header li {
+    margin-left:30px;
+}
+#header li a {
+    color: #24292e;
+}
+#header li a:hover {
+    opacity: 0.7;
+}
+
+/* main vidual */
+#mainvidual{
+    margin-bottom: 20px;
+}
+#mainvidual img{
+    width: 100%;
+    max-width: 3840px;
+    height: 1200px;
+    /* object-fit: cover; */
+    object-fit: fill;
+}
+
+/* About */
+#about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+#about .text{
+    text-align: left;
+}
+/* bike */
+#bike ul{
+    display: flex;
+    justify-content: space-between;
+}
+#bike li{
+    width: 32%;
+}
+/* footer */
+#footer{
+    font-size: 0.5rem;
+    padding: 10px 0;
+    text-align: center;
+}
+/* sp */
+@media screen and (max-width:600px){
+
+    /* mainvidual     */
+#mainvidual img{
+    height: calc(100vh-60px);
+}
+
+    /* about */
+#about .content{
+    flex-direction: column;
+}
+#about img {
+margin-right: 0;
+}
+
+
+/* bike */
+#bike ul{
+    flex-direction: column;
+}
+#bicycle li{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+}
