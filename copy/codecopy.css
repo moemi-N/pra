@@ -1,8 +1,10 @@
 /* デフォルトの文字設定 */
 @charset "UTF-8"; 
+
 html{
     /* 100％にすることで指定したフォントサイズで正しく反映される */
     font-size: 100%;
+
 }
 body{
     color: #383e45;
@@ -15,6 +17,9 @@ a{
 img{
     /* 画像が画面の横幅からはみ出るのを防ぐために横幅の最大値を設定する */
     max-width: 100%;
+    text-align: center;
+    /* メインヴィジュアルを中央配置 */
+
 }
 li{
     list-style: none;
@@ -23,8 +28,8 @@ li{
 /* h1タグ用の設定  */
 /* .+クラス名 */
 .site-title{
-    width: 120px;
-    line-height: 1px;
+    width: 180px;
+    line-height: 0px;
     /* h1タグの高さよりも小さい値を指定することで
     h1タグの上下の余白が消える。
     line-height:0;でもOK */
@@ -56,7 +61,7 @@ li{
 
 /* 画面の最大幅を指定。共通で使用する */
 .wrapper{
-    max-width: 960px;
+    max-width: 1280px; /* 最大横幅の変更 */
     margin: 0 auto 100px  auto;
     padding: 0 4%;
     text-align: center;
