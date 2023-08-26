@@ -66,3 +66,39 @@ li{
     padding: 0 4%;
     text-align: center;
 }
+
+/* ヘッダー */
+#header{
+    /* 直下の要素が並列になる */
+    display: flex;
+    /* 各アイテムを均等に配置し、
+    最初のアイテムは銭湯寄席
+    最後のアイテムは末尾に寄せる */
+    justify-content: space-between;
+    /* 上下のどこで縦軸をそろえるかを決定する */
+    align-items: center;
+    /* 上下｜左右 */
+    margin: 0 auto;
+
+}
+#header ul{
+    /* 直下の要素が並列 */
+    display: flex;
+    /* 要素内部の追加領域上下｜左右 */
+    /* mainvidualとのとの間にスペースできた */
+    padding: 10px 0;
+}
+#header li{
+    /* 要素の左側のマージン領域の設定 */
+    /* AboutとBikeの間にスペースが出来た! */
+    margin-left: 30px;
+}
+#header li a{
+    /* リンクの色変更 */
+    /* 選択後の青色の線が出てこなくなった */
+    color: #24295e;
+}
+#header li a:hover{
+    /* 要素の透明度0が透明後で実験 */
+    opacity: 0.7;
+}
